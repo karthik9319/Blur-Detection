@@ -17,3 +17,5 @@ Two input arguments need to be provided
     > --images "folder where images located"
 
     > --threshold "default is 100 where if the focus of image is less that the threshold it says its blurry"
+
+# OpenCV Fast Fourier Transform (FFT) for Blur Detection
