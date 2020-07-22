@@ -37,8 +37,8 @@ Optional arguuments
     > --test >0 "whether or not we should progressively blur the image"
 
 
-###### For more information regarding this blur methods 
+# For more information regarding this blur methods 
 
-[Blur detection with OpenCV](https://www.pyimagesearch.com/2015/09/07/blur-detection-with-opencv/)
+    [Blur detection with OpenCV](https://www.pyimagesearch.com/2015/09/07/blur-detection-with-opencv/)
 
-[OpenCV Fast Fourier Transform (FFT) for Blur Detection](https://www.pyimagesearch.com/2020/06/15/opencv-fast-fourier-transform-fft-for-blur-detection-in-images-and-video-streams/)
+    [OpenCV Fast Fourier Transform (FFT) for Blur Detection](https://www.pyimagesearch.com/2020/06/15/opencv-fast-fourier-transform-fft-for-blur-detection-in-images-and-video-streams/)
