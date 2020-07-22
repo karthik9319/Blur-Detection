@@ -13,10 +13,10 @@ argparse.add_argument(
 
 argparse.add_argument(
     "-t",
-    "--thresh",
+    "--threshold",
     type=float,
     default=20,
-    help="thresh value for the blur to be found",
+    help="threshold value for the blur to be found",
 )
 
 argparse.add_argument(
@@ -47,7 +47,7 @@ for root, sub_dirs, files in os.walk(data_path):
         gray = cv2.cvtColor(orig, cv2.COLOR_BGR2GRAY)
 
         mean, blurry = detect_blur_fft(
-            gray, size=60, thresh=args["thresh"], vis=args["vis"] > 0
+            gray, size=60, threshold=args["threshold"], vis=args["vis"] > 0
         )
 
         image = np.dstack([gray] * 3)
@@ -67,7 +67,7 @@ for root, sub_dirs, files in os.walk(data_path):
                 if radius > 0:
                     image = cv2.GaussianBlur(image, (radius, radius), 0)
                     
-                    (mean, blurry) = detect_blur_fft(image, size = 60, thresh = args["thresh"], vis = args["vis"]>0)
+                    (mean, blurry) = detect_blur_fft(image, size = 60, threshold = args["threshold"], vis = args["vis"]>0)
                     
                     image = np.dstack([image] *3)
                     color = (0, 0, 255) if blurry else (0, 255, 0)

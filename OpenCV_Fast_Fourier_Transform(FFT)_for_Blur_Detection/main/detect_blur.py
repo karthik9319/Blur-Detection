@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 
-def detect_blur_fft(image, size=60, thresh=10, vis=False):
+def detect_blur_fft(image, size=60, threshold=10, vis=False):
     (h, w) = image.shape
     (cx, cy) = (int(w / 2.0), int(h / 2.0))
     fft = np.fft.fft2(image)
@@ -32,4 +32,4 @@ def detect_blur_fft(image, size=60, thresh=10, vis=False):
     magnitude = 20 * np.log(np.abs(recon))
     mean = np.mean(magnitude)
 
-    return (mean, mean <= thresh)
+    return (mean, mean <= threshold)

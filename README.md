@@ -14,8 +14,31 @@ The Laplacian is often used for edge detection. The assumption here is that if a
 
 Two input arguments need to be provided
 
-    > --images "folder where images located"
+    > --images "folder where images are located"
 
     > --threshold "default is 100 where if the focus of image is less that the threshold it says its blurry"
 
 # OpenCV Fast Fourier Transform (FFT) for Blur Detection
+
+###### Fast Fourier Transform
+
+The FFT represents the image in both real and imaginary components. By analyzing these values, we can perform image processing routines such as blurring, edge detection, thresholding, texture analysis, and yes, even blur detection.
+
+Input arguments need to be provided
+
+    > --images "folder where images are located"
+
+Optional arguuments
+
+    > --threshold "default is 10 where if the focus of image is less that the threshold it says its blurry"
+
+    > --vis > 0 "whether or not we are visualizing intermediary steps"
+
+    > --test >0 "whether or not we should progressively blur the image"
+
+
+###### For more information regarding this blur methods 
+
+[Blur detection with OpenCV] (https://www.pyimagesearch.com/2015/09/07/blur-detection-with-opencv/)
+
+[OpenCV Fast Fourier Transform (FFT) for Blur Detection] (https://www.pyimagesearch.com/2020/06/15/opencv-fast-fourier-transform-fft-for-blur-detection-in-images-and-video-streams/)
