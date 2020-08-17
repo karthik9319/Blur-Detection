@@ -34,7 +34,7 @@ Optional arguuments
 
     > --vis > 0 "whether or not we are visualizing intermediary steps"
 
-    > --test >0 "whether or not we should progressively blur the image"
+    > --test > 0 "whether or not we should progressively blur the image"
 
 
 # For more information regarding this blur methods 
